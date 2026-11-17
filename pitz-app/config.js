@@ -1,8 +1,4 @@
-/* Configuración pública de Pitz. Si dejas esto vacío, la app funciona igual (solo en el navegador).
-   Para activar Supabase: pega aquí la "Project URL" y la clave "anon / publishable" (Supabase → Project Settings → API).
-   Estas dos claves SON públicas por diseño; la seguridad la dan las reglas RLS de supabase/01_eventos.sql.
-   NUNCA pegues aquí la clave "service_role" / "secret". */
 window.PITZ_CONFIG = {
-  SUPABASE_URL: "",        // ej.: "https://abcdefghijk.supabase.co"
-  SUPABASE_ANON_KEY: ""    // ej.: "eyJhbGciOi..." (anon) o "sb_publishable_..."
+  SUPABASE_URL: "https://kwopeigdoarrhotjrxry.supabase.co",
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt3b3BlaWdkb2FycmhvdGpyeHJ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ4NzczNDgsImV4cCI6MjExMDQ1MzM0OH0.3Us5ZkD4oDkh47CNBe9JKAEzMvccIJEpRnBmBEN3pDY"
 };
