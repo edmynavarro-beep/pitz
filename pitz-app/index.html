@@ -552,9 +552,9 @@ S.splash = () => ({
     <div style="font-size:60px;line-height:1;margin-top:6px;animation:up .6s .9s both">${logo()}</div>
     <div class="hand" style="animation:up .6s 1.1s both">tu pit stop de confianza</div>
     <div class="flag cream" style="width:100%;max-width:300px;margin-top:14px;animation-delay:1.2s"></div></div>
-    <div class="col" style="animation:up .6s 1.5s both"><div class="row" style="gap:10px"><button class="btn2 light" data-r="conductor">Soy conductor</button><button class="btn2 light" data-r="mecanico">Soy mecánico</button></div>
+    <div class="col" style="animation:up .6s 1.5s both"><button class="btn2 light" data-reg>Regístrate aquí</button>
     <button class="link" style="color:var(--sky);padding:8px" data-login>Ya tengo cuenta</button></div>`,
-  mount(el) { $$('[data-r]', el).forEach(b => b.onclick = () => { REG = { rol: b.dataset.r }; push('role', {}); }); $('[data-login]', el).onclick = () => push('login'); }
+  mount(el) { $('[data-reg]', el).onclick = () => { REG = { rol: 'conductor' }; push('role', {}); }; $('[data-login]', el).onclick = () => push('login'); }
 });
 S.role = () => ({
   nav: false, cls: 'nonav', html: `<div class="blob"></div>${topbar('')}
